@@ -1,1 +1,351 @@
-﻿
+﻿* {
+  margin: 0px;
+  padding: 0px;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+ul,
+ol{
+list-style:none;
+}
+
+body {
+  background-color: #efefef;
+  height: 700px;
+  /* border:1px solid red;*/
+}
+a {
+  text-decoration: none;
+  color: inherit
+}
+ol {
+  padding-left: 20px;
+}
+
+img{
+vertical-align:bottom;
+}
+
+.boxShadow {
+  -webkit-box-shadow: 10px 10px 10px -9px rgba(171, 171, 171, 1.88);
+}
+.topNavBarContainer {
+  position: fixed;
+  width: 100%
+}
+.topNavBar {
+  /*width:100%;*/
+  /* border:1px solid blue;*/
+  
+  padding: 23px 16px 24px 16px;
+  background-color: transparent;
+}
+.topNavBar > .logo {
+  /* border:1px solid red;*/
+  
+  font-size: 24px;
+  font-family: 'Arial Black';
+  display: inline-block;
+}
+.topNavBar >.logo >.rs {
+  color: #e6686a;
+}
+.topNavBar > .logo > .card {
+  color: #9a9da2;
+  margin-left: 12px;
+  border: 0px;
+}
+.topNavBar > nav {
+  /* border:1px solid red;*/
+  
+  margin-top: 4px;
+}
+.topNavBar > nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topNavBar > nav > ul >li {
+  float: left;
+}
+.topNavBar>nav>ul>li>a {
+  font-size: 12px;
+  color: #b7b7b7;
+  font-weight: bold;
+  margin-left: 17px;
+  margin-right: 17px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.topNavBar>nav>ul>li>a:hover {
+  border-bottom: 3px solid #e06567;
+}
+.banner {
+  height: 515px;
+  background-image: url(img/rs-cover.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+}
+.banner > .bannerMask {
+  height: 515px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.userCard {
+  border-radius: 2px;
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: -340px;
+}
+.userCard > .avatar {
+  padding: 50px;
+  float: left;
+}
+.userCard > .text {
+  padding-top: 50px;
+  width: 470px;
+  display: inline-block;
+  float: left;
+}
+.userCard > .text >.welcome {
+  display: inline-block;
+  background-color: #e6686a;
+  padding: 4px 16px;
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 10px;
+  color: white;
+}
+.userCard .text .flag {
+  position: absolute;
+  display: block;
+  border-left: 10px solid #e6686a;
+  ;
+  border-right: 0px solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 4px;
+}
+.userCard > .text >h1 {
+  margin-top: 18px;
+}
+.userCard > .text >.splitLine {
+  height: 0px;
+  border: 0px;
+  border-top: 1px solid #DEDEDE;
+  margin: 20px 0;
+}
+.userCard > .text dl {} .userCard > .text dt {
+  width: 25%;
+  display: inline-block;
+  padding-top: 5px;
+  font-weight: bold;
+}
+.userCard > .text dd {
+  width: 70%;
+  display: inline-block;
+  padding-top: 5px;
+  color: #9da0a7;
+}
+.userCard > .userCardFooter {
+  clear: both;
+  text-align: center;
+  background-color: #e6686a;
+}
+.userCard > .userCardFooter a {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 16px;
+}
+.userCard .userCardFooter > a:hover {
+  background: #CF5D5F;
+}
+.userCard > .userCardFooter svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+main .resumeDownloadWrapper{
+text-align:center;
+}
+main .resumeDownload {
+border:1px solid #cdcfd1;
+background-color:#efefef;
+color:#3d4451;
+border-radius:2px;
+display:inline-block;
+font-weight:bold;
+font-size:14px;
+line-height:16px;
+padding:21px 58px;
+margin:32px 0;
+}
+
+main .resumeDownload:hover{
+ box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+ transition: box-shadow 0.2s;
+ cursor: pointer;
+}
+main .selfInstruction{
+    font-family: kai;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align:center;
+}
+.skills{
+margin-left:auto;
+margin-right:auto;
+max-width:940px;
+margin-top:60px;
+}
+.skills h2{
+text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom:30px;
+}
+
+.skills ol{
+padding:42px 50px 10px 50px;
+background:white;
+box-shadow:0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.skills ol li{
+width: 48%;
+box-sizing: border-box;
+margin-bottom:40px;
+}
+
+.skills ol li .skillsName{
+  font-size: 14px;
+  height:15px;
+}
+
+.progressBar{
+ width:100%;
+ height:5px;
+ background-color:#FAE1E1;
+ margin-top:4px;
+ border-radius:2px;
+}
+.progress{
+ width:30%;
+ height:5px;
+ background-color:#E6686A;
+border-radius:2px;
+
+}
+.skills ol li:nth-child(even) {
+
+float:right;
+}
+.skills ol li:nth-child(odd) {
+
+float:left;
+}
+
+.jobsShow{ 
+ max-width:940px;
+ margin:0 auto;
+ margin-top:60px;
+ text-align:center; 
+}
+.jobsShow h2{
+ text-align:center;
+ color: #3d4451;
+ font-size: 34px;
+ line-height: 1.2;
+ font-weight: 600;
+}
+.jobsShow nav{
+ display:inline-block;
+ vertical-align:top;
+ width:260px;
+ text-align:center;
+ }
+
+.jobsShow ul{
+  margin-top:32px;
+  vertical-align:top;
+  display:inline-block;   
+}
+.jobsShow li{
+  float:left;
+  cursor: pointer;
+  margin-left:40px;
+}
+
+.jobsShow li:nth-child(1){
+ margin-left:0px;
+
+}
+
+.jobsShow .jobsShowBar{
+ width:92%;
+ height:5px;
+ border-radius:2px;
+ margin-top:5px;
+ margin-bottom:28px;
+ background:white;
+ display:inline-block;
+}
+
+.jobsShow .jobsShowBar .jobsShowPointer{
+ height:100%;
+ border-radius:2px;
+ background-color:#E6686A;
+ transition:all 0.3s;
+}
+.state1{
+  margin-left:0px;
+  width:38px;
+}
+
+.state2{
+ margin-left:75px;
+ width:38px;
+}
+.state3{
+ margin-left:145px;
+ width:95px;
+}
+.jobs{
+margin-left:auto;
+margin-right:auto;
+max-width:940px;
+margin-bottom:20px;
+}
+.jobs .big{
+float:left;
+
+}
+.jobs .smallWrapper{
+float:right;
+
+}
+
+.jobs .topSmall{
+
+
+}
+.jobs .bottomSmall{
+margin-top:27px;
+
+}
+
